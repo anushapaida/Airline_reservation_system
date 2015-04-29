@@ -21,7 +21,6 @@ Algorithms: No algorithms used mainly an html file
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Customer Form</title>
 <script type="text/javascript">
-<script>
 $(document).ready(function(){
     var index=0;
     $("#add_passenger").click(function(){
@@ -119,8 +118,6 @@ div {
 			<tr>
 			<td><label><b>Email:</b></label><br><input required type="text" name="email" onlick="this.value=''"></td>
 			</tr>
-			<tr>
-			</tr>
 			</table>
 		</div>
 	</form>
@@ -137,37 +134,33 @@ div {
 				}catch(Exception e){}
 		return status;
 %>
-
+<br>
 <div id="passenger_form" class="hidden">
-    <p>
         Passenger :         
         
         <input type="button" id="remove_passenger" value="Remove">
 		
-	<form action="insertPassenger.jsp" method="post">   
+		<form action="insertPassenger.jsp" method="post">   
 
-		<div id="customer class="hidden"> 
+		<div id="customer" class="hidden"> 
 			<input required type="text" name="custID" value="<%myStmt%>" onlick="this.value=''">
 		</div>
-         
+        <div id="section">
+			<table>
 			<td><label><b>First Name:</b></label><br> <input required type="text" name="firstName" onlick="this.value=''"></td>
 			<td><label><b>Last Name:</b></label><br> <input required type="text" name="lastName" onlick="this.value=''"></td>
 			</tr>
 	
-			<tr>
 			<td><label><b>Date of Birth:</b><br></label><input type="date" name="Date of Birth"></td>
-			</tr>
-	
+			</table>
+		</div>
 	</form>
-    </p>
 </div>
 
 <form>
-    <p>
          <input type="button" value="Add Passenger" id="add_passenger">
          <br>
          <input type="Submit" value="Submit">
-    </p>
 </form>
 
 </body>
