@@ -139,17 +139,19 @@ div {
 %>
 
 <div id="passenger_form" class="hidden">
+	<div id="section">
     <p>
         Passenger :         
         
         <input type="button" id="remove_passenger" value="Remove">
 		
-	<form action="insertPassenger.jsp" method="post">   
+		<form action="insertPassenger.jsp" method="post">   
 
-		<div id="customer class="hidden"> 
+		<div id="customer" class="hidden"> 
 			<input required type="text" name="custID" value="<%myStmt%>" onlick="this.value=''">
 		</div>
          
+			<table>
 			<td><label><b>First Name:</b></label><br> <input required type="text" name="firstName" onlick="this.value=''"></td>
 			<td><label><b>Last Name:</b></label><br> <input required type="text" name="lastName" onlick="this.value=''"></td>
 			</tr>
@@ -157,9 +159,10 @@ div {
 			<tr>
 			<td><label><b>Date of Birth:</b><br></label><input type="date" name="Date of Birth"></td>
 			</tr>
-	
-	</form>
+			</table>
+		</form>
     </p>
+	</div>
 </div>
 
 <form>
