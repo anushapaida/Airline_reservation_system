@@ -2,7 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<!
+<%
+/*
 Module name: Form.jsp
 Date of Code: 04/29/15
 Programmer: Kiet Nguyen
@@ -12,7 +13,7 @@ Functions: 	Populates drop down boxes for day and year.
 			Uses jquery to handle dynamical adding or removing passenger forms. After getting passenger(s) information, this jsp will call a module that will handle class creation and database insertion.
 Data Structures: No data structure mainly an html file
 Algorithms: No algorithms used mainly an html file
->
+*/%>
 <%@ page import="java.sql.*"%>
 
 <html>
