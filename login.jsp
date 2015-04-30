@@ -114,9 +114,11 @@ body{
 	
 <div id="box2">
 <div id="nav">
+<font size="3" weight=normal>
   <a href="index.jsp">Back to homepage</a>  <br>
   <a href="register.jsp">Register</a> <br>
   <a href="forgotpassword.jsp">Forgot Your Password</a>
+</font>
 </div>
 </div>
 
