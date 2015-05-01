@@ -8,59 +8,122 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Airline Reservation System</title>
+<title>MAKMLINERS Airlines</title>
 <style>
 #header {
-    background-color:#A7C942;
-    color:white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:arial;
+    font-size: 40px;
+    color:forestgreen;
     text-align:center;
-    padding:6px;
+    padding:50px;
 }
 #nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:450px;
-    width:200px;
-    float:left;
-    padding:5px;	      
+   line-height:30px;
+   background-color:#eeeeee;
+   height:450px;
+   width:200px;
+   float:left;
+   padding:5px;	
+   font-family:arial;
 }
 #section {
-    width:800px;
-    float:left;
-    padding:50px;	 	 
+   width:800px;
+   float:left;
+   padding:50px;	
+   font-family:arial;
+   color:white;
+   font-weight:bold;
 }
-
+#box1 {
+   width: 1230px;
+   padding: 0px;
+   border: 1px solid ForestGreen;
+   margin: 1;
+}
+#box2 {
+   width: 210px;
+   float: left;
+   padding: 0px;
+   border: 1px solid ForestGreen;
+   margin: 10;
+}
+#box3 {
+   width: 978px;
+   height: 420px;
+   float:left;
+   padding: 20px;
+   border: 1px solid ForestGreen;
+   margin: 1;
+}
+.my-container {
+   position: relative;
+   overflow: hidden;
+}
+.my-container b1 {
+   padding: 200px;
+   position: relative;
+   z-index: 2;
+} 
+.my-container img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: auto;
+   opacity: 0.6;
+}
 </style>
 </head>
+
 <body>
 	<form action="Homepage" method="post">
+	<div class="my-container">
+   <img src="http://crispme.com/wp-content/uploads/macbook-pro-17-clouds-wallpaper.jpg">
+	<div id="box1">
 	<div id="header">
-	<h1>Airline Reservation System</h1>
+	<b1>Welcome to MAKMLINER Airlines</b1>
 	</div>
+	</div>
+	</div>
+	
+	<div id="box2">
 	<div id="nav">
 	<a href="">Login</a><br>
 	<a href="">Reservation Details</a><br>
 	</div>
-		
-			
+	</div>
+
+   <div class="my-container">
+   <div id="box3">
 	<div id="section">
+	<img src="https://lh5.googleusercontent.com/-kvrmdfl5abI/UySNJlKabFI/AAAAAAAAADs/UzNxro3mIlc/w1920-h1080/sunset-dolphins-Roatan%252C%2BBay%2BIslands.jpg">
+   <b1>
 	<table>
 	<tr>
-	<td><b>One-Way</b> <input type="radio" name="FlightTy" value="1" required>
-	<b>Round-Trip</b> <input type="radio" name="FlightTy" value="2" required> </td>
+	<td><font size= "4" color=black weight=bold>Book a Flight</font></td>
+	</tr>
+	</table>
+	<table>
+	<tr>
+	<td>One-Way</b> <input type="radio" name="FlightTy" value="1" required>
+	Round-Trip</b> <input type="radio" name="FlightTy" value="2" required> </td>
 	</tr>
 	<tr><td></td></tr>
 	<tr><td></td></tr>
 	<tr>
 	<td>
-	<label style="padding-right: 9px"><b>From:</b> </label> <%
- 	try {
- 		Class.forName("com.mysql.jdbc.Driver");
- 		Connection con = DriverManager
- 				.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
- 		Statement statement = con.createStatement();
- 		resultset = statement.executeQuery("select * from Airport");
- %> <select id="fromairportList" name="fromairportList">
+	<label style="padding-right: 9px">From:</b> </label> <%
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager
+				.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
+		Statement statement = con.createStatement();
+		resultset = statement.executeQuery("select * from Airport");
+%> <select id="fromairportList" name="fromairportList">
 							<%
 								while (resultset.next()) {
 							%>
@@ -70,19 +133,19 @@
 							%>
 					</select>
 					 <%
- 	} catch (Exception e) { // TODO Auto-generated catch block
- 		e.printStackTrace();
- 	}
- %>
+	} catch (Exception e) { // TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+%>
 	&nbsp;&nbsp;&nbsp;&nbsp;
-	<label style="padding-right: 9px"><b>To:</b> </label> <%
- 	try {
- 		Class.forName("com.mysql.jdbc.Driver");
- 		Connection con = DriverManager
- 				.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
- 		Statement statement = con.createStatement();
- 		resultset = statement.executeQuery("select * from Airport");
- %> <select id="toairportList" name="toairportList">
+	<label style="padding-right: 9px">To:</b> </label> <%
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager
+				.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
+		Statement statement = con.createStatement();
+		resultset = statement.executeQuery("select * from Airport");
+%> <select id="toairportList" name="toairportList">
 							<%
 								while (resultset.next()) {
 							%>
@@ -95,23 +158,23 @@
 					</tr>
 					<tr><td></td></tr>
 					<tr><td></td></tr> <%
- 	} catch (Exception e) { // TODO Auto-generated catch block
- 		e.printStackTrace();
- 	}
- %>
+	} catch (Exception e) { // TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+%>
 
 				<tr>
-					<td><Label><b>Depart: </b></label> <input type="date" name="DepCal" required>
+					<td><Label>Depart: </b></label> <input type="date" name="Depart" required>
 
-					<label><b>Return: </b></label> <input type="date" name="RetCal" required></td>
+					<label>Return: </b></label> <input type="date" name="Return" required></td>
 </tr>
 <tr><td></td></tr>
 <tr><td></td></tr>
 <tr>
-		<td><label><b>Number of Passengers:</b></label> <select
+		<td><label>Number of Passengers:</b></label> <select
 			id="myListAdulPass" name="ListAdul">
 
-			<option value="0">Adults</option>
+			<option value="0">Adult</option>
 
 			<option value="1">1</option>
 
@@ -157,15 +220,14 @@
 			<option value="9">9</option>
 
 			<option value="10">10</option>
-
 		</select> </td>
 		</tr>
 		<tr><td></td></tr>
 		<tr><td></td></tr>
 		 <tr><td>
-			<label><b>Choose Flight Type</b></label> <select id="myList" name="CabinType">
+			<label>Choose Flight Class</b></label> <select id="myList" name="CabinType">
 
-			<option value="0">Select option</option>
+			<option value="0">Select Class</option>
 
 			<option value="1">Economy</option>
 
@@ -180,11 +242,16 @@
 		</tr>
 		<tr><td></td></tr>
 		<tr><td></td></tr> &nbsp;&nbsp;&nbsp;&nbsp;
-		 <tr><td><input type="submit" value="Search">
-		 </td>
+		<tr>
+		<td></td>
+		<td><button style="background-color:DarkSeaGreen;font:bold 16px arial;color: white;width:100;height:100"><b3>Submit</b3></button></td>
 		</tr>
 		</table>
+		</b1>
+		</div>
+		</div>
 		</div>
 	</form>
+	
 </body>
 </html>
