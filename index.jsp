@@ -17,6 +17,7 @@
     background-size: cover;
     font-family:arial;
     font-size: 40px;
+    font-weight: bold;
     color:forestgreen;
     text-align:center;
     padding:50px;
