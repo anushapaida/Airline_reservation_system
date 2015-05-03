@@ -11,28 +11,26 @@
 <title>SearchResults</title>
 <style>
 #table {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: Arial;
 	width: 100%;
 	border-collapse: collapse;
 }
-
 #table td, #able th {
-	font-size: 1em;
-	border: 1px solid #98bf21;
+	font-size: 14px;
+	border: 2px solid ForestGreen;
 	padding: 3px 7px 2px 7px;
 }
-
 #table th {
-	font-size: 1.1em;
-	text-align: left;
+	font-size: 16px;
+	color: ForestGreen;
+	text-align: center;
+	border: 2px solid ForestGreen;
 	padding-top: 5px;
 	padding-bottom: 4px;
-	background-color: #A7C942;
-	color: #ffffff;
+	background-color: DarkSeaGreen;
 }
-
 #table tr.alt td {
-	color: #000000;
+	color: black;
 	background-color: #EAF2D3;
 }
 </style>
@@ -166,8 +164,7 @@
 			<%
 		}
 			}
-
- 		 catch (Exception e)
+		 catch (Exception e)
 		 { // TODO Auto-generated catch block
 				e.printStackTrace();
 		 }
