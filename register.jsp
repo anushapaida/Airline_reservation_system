@@ -73,7 +73,7 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            width:1015px;
+            width:1046px;
             height:808px;
             float:left;
             padding:1px;	
@@ -96,7 +96,7 @@
            left: 0;
            top: 0;
            width: 100%;
-           height: 100%;
+           height: auto%;
            opacity: 0.5;
         }
     </style>
@@ -117,7 +117,7 @@
         </div>
         
         <div class="my-container">
-            <img src="http://www.hdwallpaperscool.com/wp-content/uploads/2013/11/beach-sunset-beautiful-widescreen-hd-wallpapers.jpg">
+            <img height= 100% src="http://www.hdwallpaperscool.com/wp-content/uploads/2013/11/beach-sunset-beautiful-widescreen-hd-wallpapers.jpg">
             <div id="section">
                 <b1><b7><center>JOIN MAKMLINERS</center></b7>
         	    
