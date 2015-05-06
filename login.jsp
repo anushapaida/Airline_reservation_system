@@ -31,6 +31,11 @@
    border:1px solid ForestGreen;
 }
 #section{
+    background-image:url("http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: Arial;
     font-size: 18px;
     color: black;
@@ -123,8 +128,6 @@
 </div>
 </div>
 
-<div class="my-container">	
-    <img src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
     <div id="section">
     <div id="login">
     <b1>
@@ -139,7 +142,6 @@
     </b1>
     </div>
     </div>
-</div>
 
 </form>
 </body>
