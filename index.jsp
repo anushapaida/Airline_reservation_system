@@ -66,22 +66,18 @@
 	<form action="Homepage" method="post">
 	<div class="my-container">
    <img src="http://crispme.com/wp-content/uploads/macbook-pro-17-clouds-wallpaper.jpg">
-	<div id="box1">
 	<div id="header">
 	<b1>Welcome to MAKMLINER Airlines</b1>
 	</div>
 	</div>
-	</div>
 	
-	<div id="box2">
 	<div id="nav">
-	<a href="">Login</a><br>
-	<a href="">Reservation Details</a><br>
-	</div>
+	    <a href="">Login</a><br>
+	    <a href="">Reservation Details</a><br>
 	</div>
 
+
    <div class="my-container">
-   <div id="box3">
 	<div id="section">
 	<img src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
    <b1>
@@ -231,7 +227,6 @@
 		</tr>
 		</table>
 		</b1>
-		</div>
 		</div>
 		</div>
 	</form>
