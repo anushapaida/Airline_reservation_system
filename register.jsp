@@ -14,7 +14,7 @@
         }
         
         b2 {
-        	color: ForestGreen;
+        	color: Black;
         	font-family: arial;
         	font-size: 12px;
         }
@@ -73,6 +73,7 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            background-image:url("http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg");
             width:1046px;
             height:808px;
             float:left;
@@ -114,9 +115,7 @@
 		    <b4>Back to MAKMLINER Airlines Homepage </b4><a href="index.jsp">here</a><br>
 		    <br><b4> Registered already please login </b4> <a href="login.jsp">here</a>
         </div>
-        
-        <div class="my-container">
-            <img height= 100% src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
+
             <div id="section">
                 <b1><b7><center>JOIN MAKMLINERS</center></b7>
         	    
@@ -176,7 +175,7 @@
         			<tr>
         				<td><input type="date" name="Date of Birth"></td>
         				<td><select><option value="gender" selected>Select</option>
-        						<option value="Female">Female</option>
+        						<option value="Female">Female</option><option value="Male">Male</option>
         				</select></td>
         			</tr>
         		</table>
