@@ -21,6 +21,7 @@
     color:forestgreen;
     text-align:center;
     padding:50px;
+    border: 1px solid ForestGreen;
 }
 #nav {
    line-height:30px;
@@ -30,36 +31,17 @@
    float:left;
    padding:5px;	
    font-family:arial;
+   border: 1px solid ForestGreen;
 }
 #section {
-   width:800px;
-   float:left;
-   padding:50px;	
+   height: 440px;
+   padding:10px;	
    font-family:arial;
-   color:white;
+   color:black;
    font-weight:bold;
-}
-#box1 {
-   width: 1230px;
-   padding: 0px;
    border: 1px solid ForestGreen;
-   margin: 1;
 }
-#box2 {
-   width: 210px;
-   float: left;
-   padding: 0px;
-   border: 1px solid ForestGreen;
-   margin: 10;
-}
-#box3 {
-   width: 978px;
-   height: 420px;
-   float:left;
-   padding: 20px;
-   border: 1px solid ForestGreen;
-   margin: 1;
-}
+
 .my-container {
    position: relative;
    overflow: hidden;
@@ -75,7 +57,7 @@
    top: 0;
    width: 100%;
    height: auto;
-   opacity: 0.6;
+   opacity: 0.5;
 }
 </style>
 </head>
@@ -101,11 +83,11 @@
    <div class="my-container">
    <div id="box3">
 	<div id="section">
-	<img src="https://lh5.googleusercontent.com/-kvrmdfl5abI/UySNJlKabFI/AAAAAAAAADs/UzNxro3mIlc/w1920-h1080/sunset-dolphins-Roatan%252C%2BBay%2BIslands.jpg">
+	<img src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
    <b1>
 	<table>
 	<tr>
-	<td><font size= "4" color=black weight=bold>Book a Flight</font></td>
+	<td><font size= "4" color=ForestGreen weight=bold>Book a Flight</font></td>
 	</tr>
 	</table>
 	<table>
