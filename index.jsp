@@ -34,6 +34,11 @@
    border: 1px solid ForestGreen;
 }
 #section {
+   background-image:url("http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
    height: 440px;
    padding:10px;	
    font-family:arial;
@@ -41,7 +46,6 @@
    font-weight:bold;
    border: 1px solid ForestGreen;
 }
-
 .my-container {
    position: relative;
    overflow: hidden;
@@ -77,13 +81,12 @@
 	</div>
 
 
-   <div class="my-container">
+
 	<div id="section">
-	<img src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
    <b1>
 	<table>
 	<tr>
-	<td><font size= "4" color=ForestGreen weight=bold>Book a Flight</font></td>
+	<td><font size= "4" color=Black weight=bold>Book a Flight</font></td>
 	</tr>
 	</table>
 	<table>
@@ -227,7 +230,6 @@
 		</tr>
 		</table>
 		</b1>
-		</div>
 		</div>
 	</form>
 	
