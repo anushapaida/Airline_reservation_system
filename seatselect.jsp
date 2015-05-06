@@ -15,7 +15,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Seat Page</title>
-		<style scoped>
+		<style>
 		 .startPt {
 			margin-top: 40px;
 			margin-left: 100px;
@@ -69,15 +69,25 @@
     
 
 	 </style>
+	 
     </head>
+    <form action = "Seatpage" method = "post">
     <header>
-	<h1 style="background-color: #A7C942; color: white">Seat Selection</h1>
+    
+	<h1 style="background-color: #A7C942; color: white">Outbound Flight</h1>
 	</header>
-	<input type="hidden" id="totPass">
+	<%int NumberOfPassengers = (Integer)session.getAttribute("SesNumberOfPassengers"); %>
+	<input type="hidden" id="totPass" value='<%= NumberOfPassengers %>'>
+	<input type="hidden" id="seatSelected" name = "seatSelected" >
 	<div>
 	
 	<% 
-		int i = 0;
+	
+	int TripType = (Integer)session.getAttribute("SesTripType");
+	int outboundFlight = (Integer)session.getAttribute("SesoutboundFlight");
+		
+
+	int i = 0;
 String classType = "";
 String SeatUnavailColor = "red";
 String SeatAvailColor = "aqua";
@@ -93,7 +103,7 @@ ResultSet resultSet = null;
 		Class.forName("com.mysql.jdbc.Driver");
 		connection = DriverManager.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
 		statement = connection.createStatement();
-		resultSet = statement.executeQuery("SELECT * FROM Seat where idAirplane = 1");
+		resultSet = statement.executeQuery("SELECT * FROM Seat where idAirplane = '"+ outboundFlight +"'");
 		
 		}
 		catch(Exception e) {
@@ -113,7 +123,7 @@ ResultSet resultSet = null;
 	%>
 	<script type='text/javascript'>
 		 
-	document.getElementById('totPass').value = 2;   
+	   
 	var curPass = 0;
 	function changeColor(name) {
 
@@ -125,6 +135,7 @@ ResultSet resultSet = null;
 				{
 					but.style.backgroundColor = "green";
 					curPass = curPass + 1;
+					document.getElementById('seatSelected').value += name +'&';
 				}			
 
 				else if(but.style.backgroundColor == "green")
@@ -150,6 +161,7 @@ ResultSet resultSet = null;
 		<br>
 		
 		<input type ="Submit" value = "Continue" name="Continue" class ="skipBut" >
+		
 		</div>
 		
 		<footer>
@@ -163,4 +175,5 @@ ResultSet resultSet = null;
 		</footer>
 		
     </body>
+    </form>
 </html>
