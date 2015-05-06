@@ -93,8 +93,8 @@
 	
 	<div id="box2">
 	<div id="nav">
-	<a href="">Login</a><br>
-	<a href="">Reservation Details</a><br>
+	<a href="login.jsp">Login</a><br>
+	<a href="ticketdetails.jsp">Reservation Details</a><br>
 	</div>
 	</div>
 
