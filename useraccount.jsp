@@ -41,7 +41,8 @@
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;;
+        background-size: cover;
+        background-image:url("http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg");
         height:590px;
         padding:10px;	
         font-family:arial;
@@ -67,10 +68,11 @@
     }
     #box {
         padding: 0px;
+        float: left;
         border: 0px solid #999;
         width: 400px;
         height:400px;
-        margin-right: 100px;
+        margin-right: 200px;
         margin-left: 300px;
     }
     .my-container {
@@ -118,11 +120,10 @@
 
 		while(resultSet.next()){
 		%>
-		<div class="my-container">
-		    <img height= 100% width=100% src="http://kerrlakecornhole.com/wp-content/uploads/2014/05/Beach-paradise-chairs.jpg">
     		<div id="section">
-    		    <b1><center><font size= "6" color= "black" family="arial"> Edit Your Profile</font></center></b1>
-        		<div id="box"> <b1>
+    		    <div id="box">
+    		    <b1><font size= "6" color= "black" family="arial"> Edit Your Profile</font></b1><br><br>
+        		 <b1>
             		<input type=hidden id="cusid" name="CustId" value="<%=resultSet.getString(1)%>">
             		First Name: <br><input type="text" class="textbox" id = "FirName" name = "FirName" value="<%=resultSet.getString(2)%>"><br>
             		Last Name:<br><input type="text" class="textbox" id = "LasName" name ="LasName" value = "<%=resultSet.getString(3)%>"><br>
@@ -139,7 +140,7 @@
         	
         		</div>
         	</div>
-		</form>
+    </form>
 
 </body>
 </html>
