@@ -107,7 +107,7 @@ body{
    <img src="http://crispme.com/wp-content/uploads/macbook-pro-17-clouds-wallpaper.jpg">
 	<div id="box1">
 	<div id="header">
-	<b1>Login to MAKMLINER Airlines</b1>
+	<b1> MAKMLINER Airlines</b1>
 	</div>
 	</div>
 	</div>
