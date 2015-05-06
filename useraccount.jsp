@@ -45,13 +45,14 @@ div {
 </head>
 <body>
 <form action ="UseraccountServlet" method = "POST">
-<h2><a href="user.jsp">Back</a></h2>
+<% int custid = Integer.parseInt(request.getParameter("id"));%>
+<h2><a href="user.jsp?id=<%=custid%>">Back</a></h2>
 <%
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://airlinedbinstance.cpvbq348bwqb.us-west-2.rds.amazonaws.com:3306/AirlineDB?user=anushapaida&password=makmliners");
 			Statement statement = con.createStatement();
-			resultSet = statement.executeQuery("SELECT Customer.*,Account.password FROM Customer INNER JOIN AirlineDB.Account ON Customer.idCustomer = Account.customer_idCustomer WHERE Customer.idCustomer = 1");
+			resultSet = statement.executeQuery("SELECT Customer.*,Account.password FROM Customer INNER JOIN AirlineDB.Account ON Customer.idCustomer = Account.customer_idCustomer WHERE Customer.idCustomer = '"+custid+"'");
 		}
 		catch (Exception e) { // TODO Auto-generated catch block
 			e.printStackTrace();
