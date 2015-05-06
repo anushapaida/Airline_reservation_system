@@ -10,40 +10,65 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Customer List</title>
 <style>
-			#table {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    #header {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:arial;
+    font-size: 40px;
+    font-weight: bold;
+    color:forestgreen;
+    text-align:center;
+    padding:50px;
+    border: 1px solid ForestGreen;
+    }
+    
+	#table {
+	font-family: Arial;
 	width: 100%;
 	border-collapse: collapse;
-}
+    }
 
-#table td, #table th {
-	font-size: 1em;
-	border: 1px solid #98bf21;
-	padding: 3px 7px 2px 7px;
-}
-
-#table th {
-	font-size: 1.1em;
-	text-align: left;
-	padding-top: 5px;
-	padding-bottom: 4px;
-	background-color: #A7C942;
-	color: #ffffff;
-}
-
-#table tr.alt td {
-	color: #000000;
-	background-color: #EAF2D3;
-}
-p  {
-    color:green;
-    font-family:verdana;
-    font-size:160%;
-}
-		</style>
+    #table td, #table th {
+	    font-size: 1em;
+	    border: 1px solid ForestGreen;;
+	    padding: 3px 7px 2px 7px;
+    }
+    #table th {
+    	font-size: 1.1em;
+    	text-align: left;
+    	padding-top: 5px;
+    	padding-bottom: 4px;
+    	background-color: ForestGreen;
+    	color: #ffffff;
+    }
+    #table tr.alt td {
+    	color: #000000;
+    	background-color: #EAF2D3;
+    }
+    .my-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .my-container b1 {
+        padding: 200px;
+        position: relative;
+        z-index: 2;
+    } 
+    .my-container img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+</style>
 
 </head>
 <body>
+
 <%String id=request.getParameter("id");
 Statement statement = null;
 
@@ -58,8 +83,16 @@ catch (Exception e) { // TODO Auto-generated catch block
 }
 
 
+
 %>
-<h1 style="background-color: green; color: white; text-align: center">Customer Info</h1>
+<div class="my-container">
+    <img src="http://crispme.com/wp-content/uploads/macbook-pro-17-clouds-wallpaper.jpg">
+	<div id="header">
+	<b1>MAKMLINER Airlines</b1>
+	</div>
+</div>
+
+<p style="color:black; text-align: center;font-family:arial;font-weight:bold;size:40px">Customer Info</h1>
 <table id="table">
 
 <tr>
