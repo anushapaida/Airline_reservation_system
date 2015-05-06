@@ -25,13 +25,14 @@
 </head>
 <body>
 <h1 id = "Header">Welcome</h1>
+<% int custid = Integer.parseInt(request.getParameter("id"));%>
 		<div id ="Nav">
-			<a href="UserAcc.jsp">Edit Profile</a><br>
-			<a href="RevDetails.jsp">Reservation Details</a><br>
-			<a href="ChangePass.jsp">Change Password</a><br>
+			<a href="useraccount.jsp?id=<%=custid%>">Edit Profile</a><br>
+			<a href="reservationdetails.jsp?id=<%=custid%>">Reservation Details</a><br>
+			<a href="changepassword.jsp?id=<%=custid%>">Change Password</a><br>
 			<a href="index.jsp">Book A Flight</a><br>
-			<a href="CrediCard.jsp">Add a Card</a><br>
-			<a href="index.jsp">Log out</a>
+			<a href="addcard.jsp?id=<%=custid%>">Add a Card</a><br>
+			<a href="login.jsp">Log out</a>
 		</div>
 		<label style="margin: 20px">You have the following options</label><br><br>
 		<label style="margin: 20px">Edit Profile- used to change your profile settings</label><br>
